@@ -37,10 +37,10 @@ def plot_cm(labels, predictions, p=0.5):
   plt.ylabel('Actual label')
   plt.xlabel('Predicted label')
 
-  print('Legitimate Transactions Detected (True Negatives): ', cm[0][0])
-  print('Legitimate Transactions Incorrectly Detected (False Positives): ', cm[0][1])
-  print('Fraudulent Transactions Missed (False Negatives): ', cm[1][0])
-  print('Fraudulent Transactions Detected (True Positives): ', cm[1][1])
+  print('<=50K Detected (True Negatives): ', cm[0][0])
+  print('<=50K Incorrectly Detected (False Positives): ', cm[0][1])
+  print('>50K Incorrectly Detected (False Negatives): ', cm[1][0])
+  print('>50K Detected (True Positives): ', cm[1][1])
   print('Total Fraudulent Transactions: ', np.sum(cm[1]))
   
 def prepare_inputs(data):
