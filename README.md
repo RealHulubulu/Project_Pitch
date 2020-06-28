@@ -3,11 +3,13 @@
 This is a simple model that can do binary classification on an imbalanced dataset. It uses the basic
 example code from https://www.tensorflow.org/tutorials/structured_data/imbalanced_data on the adult
 dataset from UC Irvine found at https://archive.ics.uci.edu/ml/datasets/Adult . This is an
-imbalanced dataset with about a 76%/24% split between the two classes represented. 
+imbalanced dataset with about a 76%/24% split between the two classes represented. In my code I have
+combined the adult training and test datasets and performed my own training/validation/testing split.
 
 **The metrics and info from training the model using weights for the classes are below.**
 
 Positive class: >60K
+
 Negative class: <=50k
 
 loss :  0.4900376870976535
